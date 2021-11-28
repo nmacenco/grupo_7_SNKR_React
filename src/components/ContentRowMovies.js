@@ -44,7 +44,7 @@ function ContentRowMovies(){
             totalAdidas = totalAdidas + 1 ; 
         }
     }) ; 
-    let moviesInDB = {
+    let productsInDb = {
         title: 'Products in Data Base',
         color: 'primary', 
         cuantity: data.totalProducts,
@@ -53,7 +53,7 @@ function ContentRowMovies(){
     
     /* <!-- Total awards --> */
     
-    let totalAwards = {
+    let totalesNike = {
         title:' Total Nike', 
         color:'success', 
         cuantity: totalNike ,
@@ -61,14 +61,14 @@ function ContentRowMovies(){
     }
     /* <!-- Actors quantity --> */
     
-    let actorsQuantity = {
+    let totalesAdidas = {
         title:'Total Adidas' ,
         color:'warning',
         cuantity: totalAdidas,
         icon:'fa-font'
     }
     
-    let cartProps = [moviesInDB, totalAwards, actorsQuantity];
+    let cartProps = [productsInDb, totalesNike, totalesAdidas];
     return (
         <div className="row">
             

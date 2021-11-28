@@ -1,7 +1,7 @@
 import React from 'react';
 import ChartRow from './ChartRow';
 
-import {useEffect , useState ,useRef } from 'react'
+import {useEffect , useState } from 'react'
 
 
 function Chart (){

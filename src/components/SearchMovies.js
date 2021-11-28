@@ -54,31 +54,31 @@ function SearchMovies(){
 						{
 							products.length > 0 && products.map((product, i) => {
 								if (product.name.includes(keyword)) {
-								return (
-									<div className=" col-sm-2 col-md-6 my-4" key={i}>
-										<div className="card shadow mb-4">
-											<div className="card-header py-3">
-												<h5 className="m-0 font-weight-bold text-gray-800">{product.name}</h5>
-											</div>
-											<div className="card-body">
-												<div className="text-center">
-													<img 
-														className="img-fluid px-3 px-sm-4 mt-3 mb-4" 
-														src={'http://localhost:3001/images/products/'+product.image}
-														alt={product.image} 
-														style={{ width: '400px', height: '400px', objectFit: 'cover' }} 
-													/>
+									return (
+										<div className=" col-sm-2 col-md-6 my-4" key={i}>
+											<div className="card shadow mb-4">
+												<div className="card-header py-3">
+													<h5 className="m-0 font-weight-bold text-gray-800">{product.name}</h5>
 												</div>
-												<p> $ {product.price}</p>
+												<div className="card-body">
+													<div className="text-center">
+														<img 
+															className="img-fluid px-3 px-sm-4 mt-3 mb-4" 
+															src={'http://localhost:3001/images/products/'+product.image}
+															alt={product.image} 
+															style={{ width: '400px', height: '400px', objectFit: 'cover' }} 
+														/>
+													</div>
+													<p> $ {product.price}</p>
+												</div>
 											</div>
 										</div>
-									</div>
-								)
+									)
 								}
 							})
 						}
 					</div>
-					{ products.length === 0 && <div className="alert alert-warning text-center">No se encontraron películas</div>}
+					{ products.length === 0 && <div className="alert alert-warning text-center">No se encontraron productos</div>}
 				</>
 				:
 				<div className="alert alert-danger text-center my-4 fs-2">Eyyyy... ¿PUSISTE TU APIKEY?</div>
