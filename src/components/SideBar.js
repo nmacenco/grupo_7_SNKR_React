@@ -1,12 +1,11 @@
 import React from 'react';
 import image from '../assets/images/logosimple.png';
 import ContentWrapper from './ContentWrapper';
-import GenresInDb from './GenresInDb';
-import LastMovieInDb from './LastMovieInDb';
-import ContentRowMovies from './ContentRowMovies';
+import LastProductInDb from './LastProductInDb';
+import ContentRowProducts from './ContentRowProducts';
 import NotFound from './NotFound';
 import {Link, Route, Switch} from 'react-router-dom';
-import SearchMovies from './SearchMovies';
+import SearchProducts from './SearchProducts';
 import Chart from './Chart';
 
 
@@ -70,17 +69,14 @@ function SideBar(){
                 <Route exact path="/">
                     <ContentWrapper />
                 </Route>
-                <Route path="/GenresInDb">
-                    <GenresInDb />
-                </Route>
                 <Route path="/LastProductInDb">
-                    <LastMovieInDb />
+                    <LastProductInDb />
                 </Route>
-                <Route path="/ContentRowMovies">
-                    <ContentRowMovies />
+                <Route path="/ContentRowProducts">
+                    <ContentRowProducts />
                 </Route>
                 <Route path="/SearchProducts">
-                    <SearchMovies />
+                    <SearchProducts />
                 </Route>
                 <Route path="/Chart">
                     <Chart />

@@ -10,7 +10,7 @@ import { useEffect , useState } from 'react'
 
 
 
-function ContentRowMovies(){
+function ContentRowProducts(){
     const [products , setProducts] = useState([])
     const [data , setData] = useState([])
 
@@ -82,4 +82,4 @@ function ContentRowMovies(){
     )
 }
 
-export default ContentRowMovies;
+export default ContentRowProducts;

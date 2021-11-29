@@ -2,7 +2,7 @@ import React from 'react';
 import {useEffect , useState ,useRef } from 'react'
 // import noPoster from '../assets/images/no-poster.jpg';
 
-function SearchMovies(){
+function SearchProducts(){
 
 	const [products, setProducts] = useState([]);
 	const [keyword , setKeyword] = useState('Nike')
@@ -87,4 +87,4 @@ function SearchMovies(){
 	)
 }
 
-export default SearchMovies;
+export default SearchProducts;
