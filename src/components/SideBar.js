@@ -56,9 +56,9 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item nav-link">
-                <Link className="nav-link" to="/ContentRowMovies">
+                <Link className="nav-link" to="/LastProductInDb">
                         <i className="fas fa-fw fa-table"></i>
-                        <span>Tables</span></Link>
+                        <span>Las product in Data Base</span></Link>
                 </li>
 
                 {/*<!-- Divider -->*/}
@@ -73,7 +73,7 @@ function SideBar(){
                 <Route path="/GenresInDb">
                     <GenresInDb />
                 </Route>
-                <Route path="/LastMovieInDb">
+                <Route path="/LastProductInDb">
                     <LastMovieInDb />
                 </Route>
                 <Route path="/ContentRowMovies">
@@ -87,7 +87,6 @@ function SideBar(){
                 </Route>
                 <Route  component={NotFound} />
             </Switch>
-            {/*<!-- End Microdesafio 2 -->*/}   
         </React.Fragment>
     )
 }
